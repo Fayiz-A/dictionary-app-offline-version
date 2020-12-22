@@ -1,5 +1,5 @@
 {
-  "homepage": "https://fayiz-a.github.io/dictionary-app-online-version/",
+  "homepage": "https://fayiz-a.github.io/dictionary-app-offline-version/",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "deploy": "gh-pages -d web-build",

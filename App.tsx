@@ -34,35 +34,35 @@ export default class App extends React.Component<Props, State> {
   }
 
   fetchResponse = async () => {
-    let textEntered: string = this.state.textEntered;
+    // let textEntered: string = this.state.textEntered;
 
-    if (textEntered == null || textEntered.length == 0) {
-      alert('Please Enter a word to be search');
-      return null;
-    }
+    // if (textEntered == null || textEntered.length == 0) {
+    //   alert('Please Enter a word to be search');
+    //   return null;
+    // }
 
-    var url: string = "https://rupinwhitehatjr.github.io/dictionary/" + this.state.textEntered.toLowerCase() + ".json";
+    // var url: string = "https://rupinwhitehatjr.github.io/dictionary/" + this.state.textEntered.toLowerCase() + ".json";
 
-    return await fetch(url).then(response => {
-      if (response.status == 404) {
-        alert('This word doesn\'t exist in our dictionary yet');
-        this.setState({
-          dictionaryWordJson: {
-            definitions: []
-          },
-        })
-        return null;
-      }
-      else if (response.status == 200) {
-        return response.json().then(responseJson => {
-          this.setState({
-            dictionaryWordJson: responseJson
-          })
-        })
+    // return await fetch(url).then(response => {
+    //   if (response.status == 404) {
+    //     alert('This word doesn\'t exist in our dictionary yet');
+    //     this.setState({
+    //       dictionaryWordJson: {
+    //         definitions: []
+    //       },
+    //     })
+    //     return null;
+    //   }
+    //   else if (response.status == 200) {
+    //     return response.json().then(responseJson => {
+    //       this.setState({
+    //         dictionaryWordJson: responseJson
+    //       })
+    //     })
 
-      }
-    }
-    );
+    //   }
+    // }
+    // );
   }
 
   render() {
