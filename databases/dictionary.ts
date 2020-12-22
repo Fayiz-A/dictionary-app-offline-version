@@ -1,4 +1,4 @@
-const dictionary:Object = {
+const dictionary:any = {
    "the" : {
      "word" : "the",
      "lexicalCategory":"Determiner",
