@@ -1,6 +1,9 @@
 {
+  "homepage": "http://fayiz-a.github.io/dictionary-app-online-version",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -16,6 +19,7 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "@babel/core": "~7.9.0",
     "@types/react": "~16.9.35",
     "@types/react-dom": "~16.9.8",
